@@ -26,6 +26,7 @@ jobs:
           command: npm run test
 
       - aws-s3/copy:
+          arguments: "--recursive"
           from: build
           to: "s3://cdk-react-test/"
 
