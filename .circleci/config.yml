@@ -12,6 +12,7 @@ jobs:
       - run:
           name: Install dependencies
           command: |
+            sudo npm i -g aws-cli
             npm i
 
       - run:
