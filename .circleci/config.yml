@@ -1,10 +1,10 @@
 version: 2
 jobs:
-  build:
+  deploy:
     docker:
       - image: circleci/node:16.13
 
-      working_directory: ~/repo
+      working_directory: ~/repo/infrastructure
       
       steps:
         - checkout 
