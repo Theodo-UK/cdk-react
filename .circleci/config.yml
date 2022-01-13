@@ -8,10 +8,11 @@ jobs:
     steps:
       - checkout:
           path: ~/repo
+
       - run:
-        name: Install dependencies
-        command: |
-          npm i
+          name: Install dependencies
+          command: |
+            npm i
 
       - run:
           name: Build
