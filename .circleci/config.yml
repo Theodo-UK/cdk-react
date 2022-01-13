@@ -4,15 +4,15 @@ jobs:
     docker:
       - image: circleci/node:16.13
 
-    working_directory: ~/repo
+    working_directory: ~/repo/infrastructure
 
     steps:
-      - checkout
+      - checkout:
+          path: ~/repo
 
       - run:
           name: Install dependencies
           command: |
-            cd infrastructure
             sudo npm i -g aws-cdk
             npm i
 
